@@ -125,7 +125,7 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in-up">
               Hi, I&apos;m{" "}
               <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
-                Harshitha
+                Bhavitha
               </span>
             </h1>
 
