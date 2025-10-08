@@ -23,7 +23,6 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            {/* Logo */}
             <div className="text-2xl font-bold text-white animate-pulse">
               Portfolio
             </div>
@@ -36,9 +35,6 @@ export default function Home() {
                     key={item}
                     href={`#${item.toLowerCase()}`}
                     className="text-white hover:text-purple-400 transition-colors duration-300 relative group"
-                    style={{
-                      animationDelay: `${index * 100}ms`,
-                    }}
                   >
                     {item}
                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-400 transition-all duration-300 group-hover:w-full"></span>
@@ -125,7 +121,7 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in-up">
               Hi, I&apos;m{" "}
               <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
-                Bhavitha
+                Karthika
               </span>
             </h1>
 
@@ -188,7 +184,7 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Floating Social Icons */}
+            {/* Social Icons */}
             <div
               className="flex justify-center gap-6 mt-16 animate-fade-in-up"
               style={{ animationDelay: "0.8s" }}
@@ -202,55 +198,4 @@ export default function Home() {
                 <a
                   key={social.name}
                   href="#"
-                  className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-2xl transition-all duration-300 hover:bg-purple-500 hover:scale-110 hover:-translate-y-2"
-                  style={{ animationDelay: `${1 + index * 0.1}s` }}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
-
-            {/* Scroll Indicator */}
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-              <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-                <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      {/* Custom Animations */}
-      <style jsx>{`
-        @keyframes fade-in-up {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes spin-slow {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-
-        .animate-fade-in-up {
-          animation: fade-in-up 0.8s ease-out forwards;
-          opacity: 0;
-        }
-
-        .animate-spin-slow {
-          animation: spin-slow 8s linear infinite;
-        }
-      `}</style>
-    </div>
-  );
-}
+                  className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-
